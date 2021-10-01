@@ -78,6 +78,8 @@ hy-AM = armeni
 hyw = armeni occidental
 ia = interlingua
 id = indonesi
+ie = interlingue
+ig = igbo
 is = islandès
 it = italià
 izh = ingrià
@@ -86,6 +88,7 @@ ka = georgià
 kaa = karakalpak
 kab = cabilenc
 kbd = kabardí
+ki = kikuiu
 kk = kazakh
 kmr = kurd del nord
 ko = coreà
@@ -110,13 +113,17 @@ ms = malai
 mt = maltès
 my = birmà
 myv = mordovià erza
+nan-tw = taiwanès (min nan)
 nb-NO = Bokmål noruec
 ne-NP = nepalès
+nia = nias
 nl = neerlandès
 nn-NO = noruec nynorsk
+nyn = nyankole
 oc = occità
 or = oriya
 pa-IN = panjabi
+pap-AW = papiament (Aruba)
 pl = polonès
 ps = paixtú
 pt = portuguès
@@ -126,6 +133,7 @@ ro = romanès
 ru = rus
 rw = ruandès
 sah = iacut
+sat = santali (ol chiki)
 sc = sard
 scn = sicilià
 shi = chelha
@@ -145,6 +153,8 @@ th = tailandès
 tl = tagal
 tr = turc
 tt = tàtar
+tw = twi
+ty = tahitià
 uby = ubikh
 udm = udmurt
 ug = uigur
@@ -154,6 +164,8 @@ uz = uzbek
 vec = vènet
 vi = vietnamita
 vot = vòtic
+yi = ídix
+yo = ioruba
 yue = cantonès
 zh-CN = xinès (Xina)
 zh-HK = xinès (Hong Kong)
@@ -186,6 +198,7 @@ logout = Finalitza la sessió
 ## Home Page
 
 home-title = El projecte Common Voice és la iniciativa de Mozilla per ajudar les màquines a aprendre com parlem les persones de debò.
+default-tagline = Mozilla Common Voice és una iniciativa per a ajudar a ensenyar a les màquines com parlen les persones de veritat.
 home-cta = Alceu la veu i col·laboreu-hi!
 wall-of-text-start = La veu és natural, la veu és humana. És per això que volem crear tecnologies de veu de qualitat per a les màquines. Però el desenvolupament d'aquests sistemes requereix un gran volum de dades de veu.
 wall-of-text-more-mobile = La majoria de les dades usades per grans companyies no estan disponibles per a tothom. Considerem que això frena la innovació. Per això, hem iniciat el projecte Common Voice, per tal de fer que la tecnologia de reconeixement de la veu estigui oberta a tothom.
@@ -279,6 +292,10 @@ shortcut-record-toggle = e
 shortcut-record-toggle-label = Enregistra/atura
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Torna a enregistrar el tall
+shortcut-discard-ongoing-recording = ESC
+shortcut-discard-ongoing-recording-label = Descarta l'enregistrament en curs
+shortcut-submit = Retorn
+shortcut-submit-label = Envia els talls
 request-language-text = No trobeu la vostra llengua al Common Voice?
 request-language-text-learn = Apreneu com sol·licitar-ho aquí!
 request-language-button = Sol·licita una llengua
@@ -350,26 +367,19 @@ skip-submission-description = L'enviament de comentaris es desactivarà en fer c
 skip-submission-note = Nota: Igualment haureu de seleccionar entre Parla o Escola per canviar el tipus de col·laboració.
 off = Desactivat
 on = Activat
-avatar-clip-title = Doneu veu al vostre avatar
-change-your-avatar-clip = Voleu canviar el vostre tall de veu?
-recording-in-progress = Enregistrament de veu en curs
-avatar-clip-recorded = El vostre avatar ara inclou un tall de veu!
-record-voice-wave = ENREGISTRA UN TALL DE VEU PERSONAL
-retry-voice-wave-recording = TORNA-HI
-re-record = TORNA A ENREGISTRAR
-delete-voice = SUPRIMEIX
-recording-voice-wave = Enregistrament
-delete-voice-clip = o suprimiu el tall de veu
-ready-to-upload = Puja
-avatar-clip-fact = És un fet ben conegut que un lector es pot distreure del contingut que ha de llegir d'una pàgina en mirar-ne el disseny.
-recreate-voice = Torna a crear un tall de veu personal
-cancel-avatar-clip-recording = Cancel·la
-about-avatar-clip-recording = Creeu un tall de veu com a part de l'avatar del vostre perfil. Aquest tall el podrà escoltar tothom en passar-hi el ratolí per sobre.
+
+## Profile - Email
+
 browse-file-title = Puja un fitxer d'imatge
 browse-file = Arrossegueu i deixeu anar o feu clic a <browseWrap>Navega</browseWrap>
 connect-gravatar = Connecta amb Gravatar
 gravatar_not_found = No s'ha trobat cap Gravatar per a la vostra adreça electrònica
 file_too_large = El fitxer seleccionat és massa gran
+avatar-uploaded = S'ha pujat l'avatar
+max-file-size = Màxim { $kb } kB
+
+## Profile - Email
+
 manage-subscriptions = Gestiona les subscripcions
 manage-email-subscriptions = Gestiona les subscripcions per correu electrònic
 email-already-used = Aquesta adreça electrònica ja s'usa per a un altre compte
@@ -384,6 +394,10 @@ faq-what-cv-a =
     La tecnologia de reconeixement de veu està revolucionant la manera com interactuem amb les màquines, però els sistemes disponibles actualment són cars i privatius. El Common Voice forma part de la iniciativa de Mozilla per fer que les tecnologies de reconeixement de veu siguin millors i més accessibles per a tothom. El Common Voice és una base de dades mundial massiva de donacions de veus que permet a qualsevol persona entrenar ràpidament i fàcil les aplicacions de veu en pràcticament qualsevol llengua.
     
     No només recollim mostres de veu de llengües molt esteses; també de llengües amb una població de parlants més petita. La publicació d'un conjunt de dades diverses veus permetrà als desenvolupadors, empresaris i comunitats solucionar aquesta manca per ells mateixos. A més del conjunt de dades del Common Voice, també estem construint un motor de reconeixement de veu de codi obert anomenat Deep Speech.
+faq-what-cv-a-2 =
+    La tecnologia de reconeixement de veu està revolucionant la manera com interactuem amb les màquines, però els sistemes disponibles actualment són cars i privatius. Mozilla Common Voice és una iniciativa per a fer que les tecnologies de reconeixement de veu siguin millors i més accessibles per a tothom. El Common Voice és una base de dades mundial massiva de donacions de veus que permet a qualsevol persona entrenar ràpidament i fàcil les aplicacions de veu en pràcticament qualsevol llengua.
+    
+    No només recollim mostres de veu de llengües molt esteses; també de llengües amb una població de parlants més petita. La publicació d'un conjunt de dades diverses veus permetrà als desenvolupadors, empresaris i comunitats solucionar aquesta manca per ells mateixos.
 faq-why-important-q = Per què és important?
 faq-why-important-a =
     La parla és sovint la manera més natural de comunicar-nos entre nosaltres i les tecnologies de veu aporten aquesta comoditat als ordinadors i dispositius mòbils. Volem capacitar els desenvolupadors per crear aplicacions sorprenents de reconeixement de veu, com per exemple, traductors en temps real i assistents digitals controlats per la veu. Ara mateix, però,  la majoria de les dades de veu necessàries per construir aquests tipus d'aplicacions són cares i propietàries. Esperem que el conjunt de dades del Common Voice proporcioni als desenvolupadors allò que necessiten per innovar i que la tecnologia de la parla estigui disponible en la seva respectiva llengua.
@@ -441,6 +455,9 @@ about-title = Per què Common Voice?
 about-subtitle = El projecte Common Voice forma part de la iniciativa de Mozilla per ajudar les màquines a aprendre com parlem les persones de debò. A més del conjunt de dades del Common Voice, també estem construint un motor de reconeixement de veu de codi obert anomenat Deep Speech.
 about-header-description =
     Ambdós projectes formen part dels nostres esforços per reduir les desigualtats en el món de la veu digital. Les tecnologies de reconeixement de veu aporten una dimensió humana als nostres dispositius, però els desenvolupadors necessiten una gran quantitat de dades de veu per crear-les. Actualment, la majoria d'aquestes dades són cares i propietàries.
+    Volem que les dades de veu siguin lliures i públiques, i garantir que les dades representin la diversitat de la gent real. Junts podem fer que el reconeixement de veu sigui millor per a tothom.
+about-header-description-2 =
+    Aquest projecte és un esforç per a reduir les desigualtats en el món de la veu digital. Les tecnologies de reconeixement de veu aporten una dimensió humana als nostres dispositius, però els desenvolupadors necessiten una gran quantitat de dades de veu per crear-les. Actualment, la majoria d'aquestes dades són cares i propietàries.
     Volem que les dades de veu siguin lliures i públiques, i garantir que les dades representin la diversitat de la gent real. Junts podem fer que el reconeixement de veu sigui millor per a tothom.
 how-does-it-work-title = Com funciona?
 how-does-it-work-text = Estem creant de forma col·laborativa un conjunt de dades de veu obert. Doneu la vostra veu, valideu la precisió dels talls d'altres persones i feu que el conjunt de dades sigui millor per a tothom.
@@ -573,8 +590,11 @@ subscribe = Subscriu-m'hi
 get-started-speech = Introducció al reconeixement de veu
 other-datasets = Altres conjunts de dades de veu
 feedback-q = Teniu algun comentari?
-deepspeech-info = El conjunt de dades del Common Voice complementa el motor de reconeixement de veu de codi obert Deep Speech de Mozilla, que podeu utilitzar per crear aplicacions de reconeixement de veu. Llegiu-ne la <githubLink>descripció general al Github</githubLink> o visiteu el <discourseLink>fòrum DeepSpeech al Discourse</discourseLink> per obtenir informació sobre com començar.
-common-voice-info-new = Teniu cap pregunta sobre el Common Voice? Idees de millora o comentaris sobre una llengua en particular? Uniu-vos al <discourseLink>fòrum Discourse</discourseLink> i feu-nos-ho saber.
+resource-nemo-info = <githubLink>NVIDIA NeMo</githubLink>™ és un <docsLink>joc d'eines de codi obert</docsLink> per a investigadors que desenvolupen models de conversa d'IA d'última generació.
+resource-deepspeech-info = El motor de reconeixement de veu de codi lliure Deep Speech de Mozilla es pot usar per a crear aplicacions de reconeixement de veu. Llegiu-ne la <githubLink>descripció general al Github</githubLink> o visiteu el <discourseLink>fòrum DeepSpeech al Discourse</discourseLink> per obtenir informació sobre com començar.
+resource-coqui-info = <coquiLink>Coqui</coquiLink> està dedicat a la tecnologia de veu oberta. Els seus projectes inclouen motors de reconeixement de veu i síntesi de text basats en l’aprenentatge profund.
+community-playbook = Llibre de la comunitat
+resource-playbook-info = <playbookLink>Trobeu orientacions útils</playbookLink> sobre tot el recorregut de Common Voice, des de la localització fins a l'ús de conjunts de dades, així com sobre com connectar amb la nostra comunitat.
 data-other-librispeech-description = LibriSpeech és un corpus d'aproximadament 1.000 hores de diàlegs en anglès llegits a 16 KHz derivat de la lectura d'audiollibres del projecte LibriVox.
 data-other-ted-name = Corpus de TED-LIUM
 data-other-ted-description = El corpus de TED-LIUM es va crear a partir d'enregistraments d'àudio i llurs transcripcions disponibles en el lloc web de TED.
@@ -850,6 +870,37 @@ why-delete-recordings =
     Podríeu fer-nos saber per què voleu suprimir els vostres enregistraments?
 profile-form-delete = Suprimeix el perfil
 
+## Profile Download
+
+download-q = Voleu baixar les vostres dades?
+download-info = Digueu-nos què voleu baixar:
+download-profile-title = Perfil
+download-profile-info = Inclou l'adreça electrònica, el nom d'usuari i la informació demogràfica, disponibles immediatament
+download-profile-size = Uns pocs bytes
+download-recordings-title = Enregistraments
+download-recordings-info = Inclou els mp3 i les frases associades, pot trigar una mica a preparar-se
+download-recordings-size = Normalment són alguns megabytes
+download-recordings-unavailable = No podeu sol·licitar els vostres enregistraments mentre hi ha una altra petició en curs.
+download-recently-requested = Podeu sol·licitar una nova exportació dels enregistraments cada { $days } dies.
+download-size = Mida
+download-selected = Seleccionat
+download-start = Baixa les dades del perfil
+download-request = Sol·licita els enregistraments
+download-requests = Anteriors sol·licituds de baixada d'enregistraments
+download-requests-info = En sol·licitar els enregistraments, els compilem en un o diversos arxius ZIP. Aquí teniu les sol·licituds anteriors:
+download-request-button = Baixa
+download-request-title = { $created }
+download-request-description = { $clipCount } talls de veu, mida total de l'arxiu: { $size }. Caduca: { $expires }
+download-request-archive-single = Un únic arxiu ZIP que conté
+download-request-archive-multiple = Dividit en { $archiveCount } arxius ZIP que contenen
+download-request-assembling-description = S'estan recopilant els vostres fitxers. Torneu a comprovar-ho més endavant.
+download-request-refresh-button = Actualitza
+download-request-modal-title = Enllaços de baixada
+download-request-modal-description = Aquí teniu els enllaços per a baixar els arxius ZIP.
+download-request-link-text = ZIP núm. { $offset } de { $total }
+download-request-metadata-link = Text de la frase
+download-request-link-single = També podeu copiar i enganxar els URL directament al vostre gestor de baixades preferit. Els enllaços caducaran en 12 hores, però podeu tornar a aquesta pàgina per a generar-ne de nous en qualsevol moment.
+
 ## Landing
 
 welcome-staff = Personal de { $company }, us donem la benvinguda!
@@ -893,3 +944,59 @@ demo-listen-subtitle = Preparat per a col·laborar?
 
 demo-dashboard-card-header = Els taulers personals us informen sobre el progrés individual i de la comunitat.
 demo-dashboard-card-body = Per cada tall de veu donat i per cada tall d'àudio validat, els taulers del vostre compte s'actualitzen per a reflectir el vostre progrés més recent en cada llengua en què col·laboreu. Sí, podeu participar en més d'una! <br/><br/> Utilitzeu taulers per a fer un seguiment de les vostres estadístiques, veure el vostre rendiment en relació amb altres membres de la comunitat i definir objectius de col·laboració diaris o setmanals.
+
+## Validation criteria
+
+contribution-criteria-nav = Criteris
+contribution-criteria-link = Compreneu els criteris de col·laboració
+contribution-criteria-page-title = Criteris de col·laboració
+contribution-criteria-page-description = Compreneu què cal cercar quan escolteu clips de veu, i ajudeu que els vostres enregistraments de veu també siguin més enriquits.
+contribution-for-example = per exemple
+contribution-misreadings-title = Lectures errònies
+contribution-misreadings-description = En escoltar, comproveu amb molta cura que el que s’ha enregistrat és exactament el que hi ha escrit; rebutgeu el tall fins i tot si hi ha errors menors. <br />Els errors més habituals són:
+contribution-misreadings-description-extended-list-1 = Canviar una paraula per una altra de semblant. Per exemple, <strong>«a»</strong>, <strong>«en»</strong> o <strong>«amb»</strong>.
+contribution-misreadings-description-extended-list-2 = Canviar alguna forma verbal. Per exemple, fer «cantéssim» en comptes de «cantessin».
+contribution-misreadings-description-extended-list-3 = Fer contraccions o elisions que no es troben en el text, o viceversa. Per exemple, fer «el oncle» en comptes de «l'oncle», o fer «'nant» en comptes d'«anant».
+contribution-misreadings-description-extended-list-4 = Ometre el final de l'última paraula, en tallar l'enregistrament massa ràpid.
+contribution-misreadings-description-extended-list-5 = Fer múltiples intents per a llegir una paraula
+contribution-misreadings-example-1-title = Els grans dinosaures del Triàsic.
+contribution-misreadings-example-2-title = Els grans dinosaure del Triàsic.
+contribution-misreadings-example-2-explanation = [Hauria de ser «dinosaures»]
+contribution-misreadings-example-3-title = Els grans dinosaures del Triàsi-.
+contribution-misreadings-example-3-explanation = [Tall d'enregistrament abans del final de l'última paraula]
+contribution-misreadings-example-4-title = Els grans dinosaures del Triàsic. Sí.
+contribution-misreadings-example-4-explanation = [S'han enregistrat més paraules de les indicades en el text]
+contribution-misreadings-example-5-title = Anem en tren a Tarragona.
+contribution-misreadings-example-6-title = 'Nem en tren a Tarragona.
+contribution-misreadings-example-6-explanation = [Hauria de ser «Anem»]
+contribution-misreadings-example-7-title = Anem amb tren a Tarragona.
+contribution-misreadings-example-7-explanation = [El text original indica «en»]
+contribution-misreadings-example-8-title = Un elefant va matar una aranya.
+contribution-misreadings-example-8-explanation = [El contingut no coincideix]
+contribution-varying-pronunciations-title = Pronunciacions variables
+contribution-varying-pronunciations-description = Tingueu cura abans de rebutjar un clip perquè el lector ha pronunciat malament una paraula. El català té una àmplia varietat de pronúncies, i potser no les heu sentit mai. No es pronuncia igual en català central, balear, valencià o septentrional. Feu confiança a aquells que parlen d’una manera diferent de la vostra.
+contribution-varying-pronunciations-description-extended = D'altra banda, si creieu que probablement el lector no s'ha trobat mai amb la paraula i simplement fa una suposició incorrecta de la pronúncia, rebutgeu el tall. Si no n'esteu segur, utilitzeu el botó Omet.
+contribution-varying-pronunciations-example-1-title = Ells mengen peres.
+contribution-varying-pronunciations-example-1-explanation = [«peres» es pot pronunciar de diferents maneres, segons la variant dialectal]
+contribution-varying-pronunciations-example-2-title = Ha fixat la data.
+contribution-varying-pronunciations-example-2-explanation = [En català, «fixat» sempre es pronuncia de la mateixa manera]
+contribution-background-noise-title = Soroll de fons
+contribution-background-noise-description = Volem que els algoritmes d’aprenentatge automàtic siguin capaços de manejar diversos sorolls de fons. Es poden acceptar sorolls relativament forts, sempre que no impedeixin escoltar la totalitat del text. La música de fons tranquil·la està bé; la música prou forta, que eviti que sentiu totes les paraules, no ho és.
+contribution-background-noise-description-extended = Si l'enregistrament es talla, o fa espetecs, rebutgeu-lo. Llevat que es pugui sentir la totalitat del text.
+contribution-background-noise-example-1-fixed-title = <strong>[estornut]</strong> Els grans dinosaures del <strong>< tos ></strong> Triàsic.
+contribution-background-noise-example-2-fixed-title = Els grans dino <strong>[tos]</strong> del Triàsic.
+contribution-background-noise-example-2-explanation = [No se sent part del text]
+contribution-background-noise-example-3-fixed-title = <strong>[espetec]</strong> grans dinosaures de <strong>[espetec]</strong> -riàsic.
+contribution-background-voices-title = Veus de fons
+contribution-background-voices-description = Un soroll de fons tranquil està bé, però no volem que hi hagi veus addicionals que puguin fer que un algoritme informàtic identifiqui paraules que no apareixen en el text escrit. Si podeu sentir paraules diferents a part de les del text, s'hauria de rebutjar el clip. Normalment, això passa si s'ha deixat el televisor encès o si hi ha una conversa a prop.
+contribution-background-voices-description-extended = Si l'enregistrament es talla, o fa espetecs, rebutgeu-lo. Llevat que se senti la totalitat del text.
+contribution-background-voices-example-1-title = Els grans dinosaures del Triàsic. <strong>[llegit per una veu]</strong>
+contribution-background-voices-example-1-explanation = Que vens? <strong>[cridat per algú altre]</strong>
+contribution-volume-title = Volum
+contribution-volume-description = Habitualment hi ha variacions en el volum entre lectors. Rebutgeu un tall només si el volum és tan alt que l'enregistrament s'entretalla, o (més habitual) si és tan baix que no podeu sentir que s'hi diu sense la referència del text escrit.
+contribution-reader-effects-title = Efectes de lectura
+contribution-reader-effects-description = La majoria dels enregistraments són de gent que parla amb naturalitat. Podeu acceptar la gravació ocasional no estàndard on es cridi, xiuxiuegi o, òbviament, es faci amb veu dramatitzada. Rebutgeu els enregistraments cantats i els que utilitzin una veu sintetitzada per ordinador.
+contribution-just-unsure-title = Teniu dubtes?
+contribution-just-unsure-description = Si us trobeu amb alguna cosa que aquestes directrius no cobreixen, voteu segons el vostre criteri. Si realment no ho podeu decidir, feu servir el botó Omet i passeu a l'enregistrament següent.
+see-more = <chevron></chevron>Més
+see-less = <chevron></chevron>Menys

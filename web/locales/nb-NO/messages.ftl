@@ -112,6 +112,7 @@ my = Burmesisk
 myv = Erziamordvinsk
 nb-NO = Norsk (bokmål)
 ne-NP = Nepalsk
+nia = Nias
 nl = Nederlandsk
 nn-NO = Norsk (nynorsk)
 oc = Oksitansk
@@ -284,6 +285,8 @@ shortcut-record-toggle = e
 shortcut-record-toggle-label = Ta opp/Stopp
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Spill inn lydklipp om igjen
+shortcut-submit = Enter
+shortcut-submit-label = Send inn klipp
 request-language-text = Ser du ikke språket ditt på Common Voice ennå?
 request-language-text-learn = Les hvordan du kan be om det her!
 request-language-button = Send en forespørsel om et nytt språk
@@ -886,3 +889,10 @@ demo-listen-subtitle = Klar til å bidra?
 
 demo-dashboard-card-header = Personlig oversikt holder deg oppdatert med individuelle og samfunnsmessige fremskritt.
 demo-dashboard-card-body = For hvert stemmeklipp som doneres, og hvert lydklipp som valideres, oppdateres kontoens oversikt for å gjenspeile den siste fremgangen din på hvert språk du bidrar til. Ja, du kan bidra til mer enn én!<br/><br/> Bruk oversikt for å spore statistikken din, se hvordan du har det sammen med andre i samfunnet, og angi daglige eller ukentlige bidragsmål.
+
+## Validation criteria
+
+contribution-for-example = for eksempel
+contribution-misreadings-title = Feillesninger
+see-more = <chevron></chevron>Se mer
+see-less = <chevron></chevron>Se mindre

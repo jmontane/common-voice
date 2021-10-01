@@ -2,7 +2,7 @@
 
 yes-receive-emails = Jes, bonvolu sendi retpoŝtajn mesaĝojn al mi. Mi ŝatus havi aktualajn informojn pri la projekto Common Voice
 stayintouch = Ĉe Mozilla ni konstruas komunumon pri voĉaj teknologioj. Ni ŝatus resti en kontakto kun vi pri ĝisdatigoj, novaj fontoj kaj ankaŭ por scii pli pri  via uzo de tiuj ĉi datumoj.
-privacy-info = Ni promesas zorge pritrakti  viajn informojn. Pli da informo troveblas en nia <privacyLink>politiko pri privateco</privacyLink>.
+privacy-info = Ni promesas zorge pritrakti viajn informojn. Pli da informo troveblas en nia <privacyLink>politiko pri privateco</privacyLink>.
 return-to-cv = Reiri al Common Voice
 email-input =
     .label = Retpoŝto
@@ -11,7 +11,7 @@ loading = Ŝargado…
 email-opt-in-info = Mi ŝatus ricevi retpoŝtajn mesaĝojn, ekzemple memorigojn pri celoj, raportojn pri mia progreso kaj bultenojn pri Common Voice.
 email-opt-in-info-title = Aliĝi al la dissendolisto de Common Voice
 email-opt-in-info-sub-with-challenge = Ricevi retpoŝtmesaĝojn, kiel ekzemple memorigilojn pri defioj kaj celoj, progresajn ĝisdatigojn, kaj informilojn pri Common Voice.
-email-opt-in-privacy-v2 = Si vi abonas dissendoliston, vi konsentas kun la pritrakto de tiu ĉi informo, laŭ la priskribo de la <privacyLink>privateca politiko</privacyLink> de Mozilla.
+email-opt-in-privacy-v2 = Se vi abonas dissendoliston, vi konsentas kun la pritrakto de tiu ĉi informo, laŭ la priskribo de la <privacyLink>privateca politiko</privacyLink> de Mozilla.
 indicates-required = * signas devigan kampon
 not-available-abbreviation = Nedisponebla
 
@@ -112,6 +112,7 @@ my = Birma
 myv = Erzja
 nb-NO = Norvega Bokmål
 ne-NP = Nepala
+nia = Niasa
 nl = Nederlanda
 nn-NO = Norvega ninorsk
 oc = Okcitana
@@ -146,6 +147,7 @@ th = Taja
 tl = Tagaloga
 tr = Turka
 tt = Tatara
+tw = Tivia
 uby = Ubiĥa
 udm = Udmurta
 ug = Ujgura
@@ -155,6 +157,7 @@ uz = Uzbeka
 vec = Venecia
 vi = Vjetnama
 vot = Vota
+yo = Joruba
 yue = Kantona
 zh-CN = Ĉina (Ĉinio)
 zh-HK = Ĉina (Honkongo)
@@ -201,7 +204,7 @@ vote-yes = Jes
 vote-no = Ne
 toggle-play-tooltip = Premu { shortcut-play-toggle } por ludi/haltigi
 speak-subtitle = Donacu vian voĉon
-speak-paragraph = Fari voĉregistroj estas kerna parto de la konstruo de nia malfermita datumaro; kelkaj dirus ke ĝi ankaŭ estas la amuza parto.
+speak-paragraph = Fari voĉregistrojn estas kerna parto de la konstruo de nia malfermita datumaro; kelkaj dirus ke ĝi ankaŭ estas la amuza parto.
 speak-goal-text = Nombro de voĉregistroj
 listen-subtitle = Helpu nin validigi voĉojn
 listen-paragraph = Validigi voĉregistrojn estas same grava por la misio de Common Voice. Aŭskultu do, kaj helpu nin krei altkvalitan malfermitkodan voĉan datumaron.
@@ -280,6 +283,8 @@ shortcut-record-toggle = r
 shortcut-record-toggle-label = Registri / Haltigi
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Refari voĉregistron
+shortcut-submit = Enigi
+shortcut-submit-label = Sendi registraĵojn
 request-language-text = Ĉu vi ne vidas vian lingvon en Common Voice?
 request-language-text-learn = Jen pli da informo pri tiu peto!
 request-language-button = Peti lingvon
@@ -891,3 +896,13 @@ demo-listen-subtitle = Ĉu vi pretas kontribui?
 
 demo-dashboard-card-header = Persona panelo montras al vi la aktualan progreson propran kaj komunuman.
 demo-dashboard-card-body = Ĉiu nova voĉregistro kaj revizio ĝisdatigas viajn panelon por montri la aktualan progreson en ĉiu lingvo, kun kiu vi kontribuas. Jes, vi povas kontribui kun pli ol unu lingvo! <br/><br/>Uzu panelojn por sekvi viajn progreson kaj vidi kiel vi kaj aliaj en la komunumo kunlaboras. Vi ankaŭ povas tie difini viajn tagajn aŭ semajnajn celojn kontribuajn.
+
+## Validation criteria
+
+contribution-criteria-nav = Kriterio
+contribution-criteria-link = Kompreni la kriteriojn por kontribuoj
+contribution-criteria-page-title = Kriterioj pri kontribuoj
+contribution-criteria-page-description = Lernu pri tio, kion vi devus serĉi kiam vi aŭdas voĉregistrojn kaj plibonigu viajn proprajn registraĵojn!
+contribution-for-example = ekzemple
+contribution-misreadings-title = Mislegoj
+contribution-volume-title = Laŭteco

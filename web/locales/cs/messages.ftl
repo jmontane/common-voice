@@ -42,6 +42,7 @@ br = Bretonština
 bxr = Burjatština
 ca = Katalánština
 cak = Kaqchikel
+ckb = Sorání kurdština
 cnh = Hakha Chin
 co = Korsičtina
 cs = Čeština
@@ -77,6 +78,7 @@ hy-AM = Arménština
 hyw = Západní arménština
 ia = Interlingua
 id = Indonéština
+ie = Interlingue
 is = Islandština
 it = Italština
 izh = Ižorština
@@ -85,7 +87,9 @@ ka = Gruzínština
 kaa = Karakalpačtina
 kab = Kabylština
 kbd = Kabardština
+ki = Kikujština
 kk = Kazaština
+kmr = Kurmándží kurdština
 ko = Korejština
 kpv = Komi-zyrjanština
 kw = Kornština
@@ -101,19 +105,23 @@ mhr = Lužní Marijština
 mk = Makedonština
 ml = Malajálamština
 mn = Mongolština
+mos = Mossijština
 mr = Maráthština
 mrj = Horská Marijština
 ms = Malajština
 mt = Maltština
 my = Barmština
 myv = Erzja
+nan-tw = Tchajwanština (Minnan)
 nb-NO = Norština (Bokmål)
 ne-NP = Nepálština
+nia = Niaština
 nl = Nizozemština
 nn-NO = Nynorsk
 oc = Okcitánština
 or = Udijština
 pa-IN = Pandžábština
+pap-AW = Papiamento (Aruba)
 pl = Polština
 ps = Paštština
 pt = Portugalština
@@ -125,6 +133,7 @@ rw = Rwandština
 sah = Jakutština
 sc = Sardinština
 scn = Sicilština
+shi = Shilha
 si = Sinhalština
 sk = Slovenština
 sl = Slovinština
@@ -141,6 +150,7 @@ th = Thajština
 tl = Tagalština
 tr = Turečtina
 tt = Tatarština
+tw = Ťwiština
 uby = Ubychština
 udm = Udmurtština
 ug = Ujgurština
@@ -150,6 +160,7 @@ uz = Uzbečtina
 vec = Benátština
 vi = Vietnamština
 vot = Votština
+yo = Jorubština
 yue = Kantonština
 zh-CN = Čínština (Čína)
 zh-HK = Čínština (Hong Kong)
@@ -182,6 +193,7 @@ logout = Odhlásit
 ## Home Page
 
 home-title = Projekt Common Voice je iniciativa Mozilly, která pomáhá strojům učit se, jak mluví skuteční lidé.
+default-tagline = Projekt Mozilla Common Voice je iniciativa, která pomáhá strojům učit se, jak mluví skuteční lidé.
 home-cta = Mluvte a přispějte zde!
 wall-of-text-start = Hlas je přirozený a lidský. Proto chceme vytvořit použitelnou hlasovou technologii pro naše stroje. Abychom ji ale mohli vytvořit, potřebujeme spoustu hlasových dat.
 wall-of-text-more-mobile = Většina dat používaných velkými společnostmi nejsou dostupná pro většinu lidí. My si ale myslíme, že to jen zdržuje inovace. Proto jsme spustili Common Voice, projekt, který udělá rozpoznávání hlasu dostupné pro všechny.
@@ -278,7 +290,12 @@ shortcut-record-toggle = r
 shortcut-record-toggle-label = Nahrát/Zastavit
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Nahrát klip znovu
+shortcut-discard-ongoing-recording = ESC
+shortcut-discard-ongoing-recording-label = Zahodit probíhající nahrávku
+shortcut-submit = Enter
+shortcut-submit-label = Odeslat nahrávky
 request-language-text = Nevidíte svůj jazyk na Common Voice?
+request-language-text-learn = Zde se dozvíte, jak o něj požádat!
 request-language-button = Požádat o jazyk
 
 ## ProjectStatus
@@ -349,26 +366,19 @@ skip-submission-description = Při přispívání bude po klepnutí na Odeslat p
 skip-submission-note = Poznámka: Pro změnu druhu vašich příspěvků budete stále muset zvolit mezi Mluvit a Poslouchat.
 off = Vypnuto
 on = Zapnuto
-avatar-clip-title = Dejte svému avataru hlas
-change-your-avatar-clip = Chcete změnit svoji hlasovou nahrávku?
-recording-in-progress = Probíhá hlasový záznam
-avatar-clip-recorded = Váš avatar nyní obsahuje hlasový záznam!
-record-voice-wave = NAHRÁT ZÁZNAM HLASU
-retry-voice-wave-recording = OPAKOVAT
-re-record = NAHRÁT ZNOVU
-delete-voice = ODSTRANIT
-recording-voice-wave = Nahrávání
-delete-voice-clip = nebo Smazat hlasový záznam
-ready-to-upload = NAHRÁT
-avatar-clip-fact = Je již dlouho známým faktem, že čtenář bude pouze rozptylován čitelným obsahem stránky při zkoumání jejího rozvržení.
-recreate-voice = Znovu vytvořit Voicewave
-cancel-avatar-clip-recording = ZRUŠIT
-about-avatar-clip-recording = Vytvořte hlasový záznam jako součást vašeho avatara. Ostatní si ho mohou poslechnout po najetí myší.
+
+## Profile - Email
+
 browse-file-title = Nahrát obrázek
 browse-file = Přetáhněte nebo <browseWrap>Procházejte</browseWrap>
 connect-gravatar = Propojit s Gravatarem
 gravatar_not_found = Pro váš e-mail nebyl nalezen žádný gravatar
 file_too_large = Zvolený soubor je příliš velký
+avatar-uploaded = Avatar nahrán
+max-file-size = max. { $kb } kb
+
+## Profile - Email
+
 manage-subscriptions = Spravovat odběr
 manage-email-subscriptions = Spravovat odběry e-mailů
 email-already-used = E-mail je již používán pro jiný účet
@@ -383,6 +393,10 @@ faq-what-cv-a =
     Technologie rozpoznávání hlasu mění způsob, jakým komunikujeme se stroji, avšak většina v současnosti dostupných systémů je drahá a uzavřená. Projekt Common Voice je součástí iniciativy společnosti Mozilla s cílem technologie rozpoznávání hlasu vylepšit a zpřístupnit pro všechny. Projekt Common Voice je rozsáhlou celosvětovou databází darovaných hlasových nahrávek, umožňující v podstatě komukoliv rychle a jednoduše vytrénovat hlasové aplikace v takřka jakémkoliv jazyce.
     
     Nesbíráme pouze hlasové záznamy v široce používaných jazycích, nýbrž i v těch méně používaných. Zveřejnění bohaté hlasové databáze umožní vývojářům, podnikatelům a komunitám zaplnit tuto mezeru vlastními silami. Kromě projektu Common Voice vytváříme také otevřený systém rozpoznávání hlasu nazvaný Deep Speech.
+faq-what-cv-a-2 =
+    Technologie rozpoznávání hlasu mění způsob, jakým komunikujeme se stroji, avšak většina v současnosti dostupných systémů je drahá a uzavřená. Cílem projektu Mozilla Common Voice je rozpoznávání hlasu vylepšit a zpřístupnit pro všechny. Common Voice je rozsáhlou celosvětovou databází darovaných hlasových nahrávek, umožňující v podstatě komukoliv rychle a jednoduše vytrénovat hlasové aplikace v takřka jakémkoliv jazyce.
+    
+    Nesbíráme pouze hlasové záznamy v široce používaných jazycích, nýbrž i v těch méně používaných. Zveřejnění bohaté hlasové databáze umožní vývojářům, podnikatelům a komunitám zaplnit tuto mezeru vlastními silami.
 faq-why-important-q = Proč je to důležité?
 faq-why-important-a =
     Lidský hlas je mnohdy nejpřirozenějším způsobem mezilidské komunikace a hlasové technologie přinášejí pohodlí tohoto způsobu komunikace do našich počítačů a mobilních zařízení. Chceme tedy umožnit vývojářům tvorbu skvělých hlasových aplikací, jako například překladače a hlasem ovládané digitální asistenty. Ale v současné době je většina hlasových dat potřebných pro tvorbu podobných aplikací velmi drahá či přímo nedostupná. Doufáme však, že projekt Common Voice dá vývojářům to, co potřebují, aby vytvořili podobné inovativní technologie i ve svém jazyce.
@@ -440,6 +454,9 @@ about-title = Proč Common Voice?
 about-subtitle = Projekt Common Voice je součástí iniciativy Mozilly, která pomáhá strojům učit se, jak mluví skuteční lidé. Kromě datasetu Common Voice vytváříme také systém rozpoznávání hlasu s otevřeným zdrojovým kódem zvaný Deep Speech.
 about-header-description =
     Oba tyto projekty jsou součástí našich snah o překlenutí propasti digitální komunikace. Technologie rozpoznávání hlasu vnášejí lidskost do našich zařízení, ale aby je mohli vývojáři vytvářet, potřebují enormní množství hlasových dat. Tato data jsou ale v současné době zpravidla drahá a proprietární.
+    Naším cílem je tato data zdarma a veřejně zpřístupnit a zajistit, aby reprezentovala i jedinečnosti skutečných lidí. Spolu zvládneme technologie rozpoznání hlasu vylepšit pro všechny.
+about-header-description-2 =
+    Tento projekt je součástí našich snah o překlenutí propasti digitální komunikace. Technologie rozpoznávání hlasu vnášejí lidskost do našich zařízení, ale aby je mohli vývojáři vytvářet, potřebují enormní množství hlasových dat. Tato data jsou ale v současné době zpravidla drahá a proprietární.
     Naším cílem je tato data zdarma a veřejně zpřístupnit a zajistit, aby reprezentovala i jedinečnosti skutečných lidí. Spolu zvládneme technologie rozpoznání hlasu vylepšit pro všechny.
 how-does-it-work-title = Jak to funguje?
 how-does-it-work-text = Sbíráme otevřenou databázi hlasových záznamů. Darujte svůj hlas, ověřte přesnost hlasových záznamů ostatních a pomozte nám tuto databázi dále vylepšovat.
@@ -523,6 +540,8 @@ release-version = Verze
 dataset-date = Datum
 license = Licence: <licenseLink>{ $license }</licenseLink>
 license-mixed = Kombinovaná
+data-download-singleword-title = Stáhněte si jednoslovnou datovou sadu
+data-download-singleword-callout-v2 = Tato sada je určena pro speciální případ rozeznávání vyslovovaných číslic a slov ano / ne.
 review-terms = Používáním Common Voice souhlasíte s našimi <termsLink>Podmínkami</termsLink> a <privacyLink>zásadami ochrany osobních údajů</privacyLink>
 terms-agree = Souhlasím
 terms-disagree = Nesouhlasím
@@ -572,8 +591,11 @@ subscribe = Odebírat
 get-started-speech = Začínáme s rozpoznáváním řeči
 other-datasets = Ostatní hlasové datasety
 feedback-q = Máte zpětnou vazbu?
-deepspeech-info = Dataset Common Voice doplňuje open source systém Mozilly Deep Speech pro rozpoznávání hlavu, který můžete použít pro tvorbu aplikací rozpoznávajících řeč. Pro začátek si přečtěte naše <githubLink>shrnutí na GitHubu</githubLink> nebo se připojte na <discourseLink>DeepSpeech Discourse</discourseLink>.
-common-voice-info-new = Máte otázky k projektu Common Voice? Nápady na zlepšení? Nebo nám chcete poskytnout zpětnou vazbu ke konkrétnímu jazyku? Přidejte se na naše <discourseLink>Discourse fórum</discourseLink> a dejte nám vědět!
+resource-nemo-info = <githubLink>NVIDIA NeMo</githubLink>™ je <docsLink>open-source sada nástrojů</docsLink> pro výzkumníky nejpokročilejších konverzačních modelů umělé inteligence.
+resource-deepspeech-info = Open source systém Mozilly Deep Speech pro rozpoznávání hlasu můžete použít pro tvorbu aplikací rozpoznávajících řeč. Pro začátek si přečtěte naše <githubLink>shrnutí na GitHubu</githubLink> nebo se připojte na <discourseLink>DeepSpeech Discourse</discourseLink>.
+resource-coqui-info = <coquiLink>Coqui</coquiLink> se zabývá otevřenými technologiemi týkající se práce s řečí. Jejich projekty zahrnují systémy pro rozpoznávání i syntézu řeči, a jsou založené na hlubokém učení.
+community-playbook = Komunitní příručka
+resource-playbook-info = <playbookLink>Zde naleznete užitečné informace</playbookLink> o celém projektu Common Voice, od lokalizace po používání datových sad a zapojení se do komunity.
 data-other-librispeech-description = LibriSpeech je korpus přibližně 1 000 hodin 16 kHz čtené angličtiny odvozený od čtených audioknih z projektu LibriVox.
 data-other-ted-name = Korpus TED-LIUM
 data-other-ted-description = Korpus TED-LIUM je tvořen zvukem přednášek a jejich přepisů dostupných na webu TED.
@@ -859,6 +881,12 @@ why-delete-recordings =
     Řeknete nám, proč chcete smazat vaše nahrávky?
 profile-form-delete = Smazat profil
 
+## Profile Download
+
+download-q = Potřebujete stáhnout svá data?
+download-info = Řekněte nám, co chcete stáhnout:
+download-profile-title = Profil
+
 ## Landing
 
 welcome-staff = Vítejte zaměstnanci { $company }!
@@ -871,9 +899,12 @@ read-more-about = Přečtěte si více na stránce O nás
 
 demo-get-started = Jdeme na to!
 demo-welcome = Vítejte ve službě Common Voice
+demo-welcome-subheader = Chcete zjistit více o přispívání do tohoto projektu?
 
 ## Demo Datasets
 
+demo-language-select-card-header = Common Voice je světově největší veřejně dostupný datová sada hlasových nahrávek ve více jazycích.
+demo-language-select-card-body = Díky zapojení více než 259 tisíc lidí ve více než 50 jazycích jsou tato data využívána pro učení aplikací lépe reagovat na lidský hlas.
 card-button-next = Další
 card-button-back = Zpět
 demo-language-select-label = Procházet jazyky
@@ -884,13 +915,46 @@ demo-account = Účet
 ## Demo Account
 
 demo-account-card-header = Není nutné mít vytvořený účet, abyste mohli přispívat, ale může být užitečný.
+demo-account-card-body = Vpravo vysvětlujeme výhody projektu a jaké informace zveřejňujeme. Níže najdete odkazy jak si založit účet Common Voice na vlastním zařízení.
 demo-account-enter-email =
     .label = Zadejte e-mail, na který zašleme přihlašovací odkaz
 demo-account-sign-up = Pošlete mi přihlaovací odkaz
 
 ## Demo Contribute
 
+demo-contribute-card-header = Jste připraveni přiložit svůj hlas a sluch k dílu?
+demo-contribute-card-body-v2 = Když už více, co je Common Voice, chcete ho zkusit? Klepněte na ikonu mikrofonu a začněte nahlas číst věty.<br/><br/>Pokud chcete raději kontrolovat nahrávky ostatních přispěvatelů, klepněte na ikonu přehrávání. Pomůžete nám ověřit, že obsah nahrávek odpovídá textu napsaných vět.
 demo-listen-subtitle = Jste připraveni se zapojit?
 
 ## Demo Dashboard
 
+demo-dashboard-card-header = Na své osobní nástěnce uvidíte přehled svého osobního postupu i postupu celé komunity.
+demo-dashboard-card-body = Vaše nástěnka se aktualizuje s každou nově nahranou nebo ověřenou nahrávkou v každém jazyce, do kterého přispíváte. Můžete pomáhat i s několika jazyky zároveň.<br/><br/>Na nástěnce sledujte své statistiky, jak se vám daří v porovnání s ostatními, a můžete si nastavit osobní denní nebo týdenní cíle.
+
+## Validation criteria
+
+contribution-criteria-link = Kritéria pro přispívání
+contribution-criteria-page-title = Kritéria pro přispívání
+contribution-criteria-page-description = Na co se zaměřit při poslechu hlasových nahrávek i při pořizování vlastních nahrávek.
+contribution-for-example = například
+contribution-misreadings-title = Přeřeknutí
+contribution-misreadings-description = Během poslechu dávejte bedlivě pozor, jestli nahrávka obsahuje přesně to, co je napsáno. Odmítněte nahrávku i pokud obsahuje jen drobnou chybu. <br />Mezi běžné chyby patří:
+contribution-misreadings-description-extended-list-4 = Chybějící část posledního slova kvůli předčasně ukončenému nahrávání.
+contribution-misreadings-description-extended-list-5 = Opakované přečtení téhož slova.
+contribution-varying-pronunciations-description = Speciální péči věnujte případnému zamítání nahrávek kvůli odlišně vyslovenému slovu, přízvuku nebo tónu věty. Ne každý vyslovuje stejně, jako vy, a v našem datasetu chceme zachytit výslovnost každého, pokud je správná.
+contribution-varying-pronunciations-description-extended = Na druhou stranu pokud máte pocit, že autor nahrávky nějaké slovy nezná a pouze si vymyslel jeho výslovnost, neváhejte takovou nahrávku odmítnout. Pokud si nejste jistí, nahrávku přeskočte.
+contribution-background-noise-title = Hluk v pozadí
+contribution-background-noise-description = Chceme, aby algoritmy dokázali pracovat i v běžném prostředí, kde se může vyskytovat i poměrně silný hluk. I v nahrávce tak silný hluk nebrání jejímu přijetí, ovšem za předpokladu, že je slyšet celý text. Tichá hudba na pozadí ničemu nevadí. Pokud přes ni ale neuslyšíte něktére slovo, to už v pořádku není.
+contribution-background-noise-description-extended = Pokud nahrávka šumí nebo v ní praská, a není slyšet celý text, odmítněte ji.
+contribution-background-voices-title = Hlasy v pozadí
+contribution-background-voices-description = Nejasné vzdálené hlasy je v pořádku, ale zároveň v našem datasetu nechcete další hlasy, ze kterých by algoritmy mohly rozeznávat slova, které nejsou v původním textu. Pokud rozumíte hlasům na pozadí, co říkají, nahrávku byste měli odmítnout. Typickým příkladem je zapnutá televize, nebo rozhovor dalších lidí.
+contribution-background-voices-description-extended = Pokud nahrávka šumí nebo v ní praská, a není slyšet celý text, odmítněte ji.
+contribution-background-voices-example-1-explanation = Jdeš? <strong>[další řečník]</strong>
+contribution-volume-title = Hlasitost
+contribution-volume-description = Hlasitost nahrávek od jednotlivých autorů se bude pochopitelně lišit. Nahrávky odmítejte jen pokud je hlasitost tak vysoká, že se nahrávka rozpadá, nebo (a to je častější) je nahrávka tak potichu, že bez přečtení napsaného textu nerozeznáte všechna slova.
+contribution-reader-effects-title = Způsob řeči
+contribution-reader-effects-description = Ve většině nahrávek lidé mluví normálním hlasem. Ale nevadí ani občasný zvýšený hlas, šeptání nebo "dramatický" přednes. Odmítněte však prosím zpěv a nahrávky počítačem syntetizovaným hlasem.
+contribution-just-unsure-title = Jen si nejste jisti?
+contribution-just-unsure-description = Pokud narazíte v nahrávce na problém, který tu nezmiňujeme, hlasujte o nahrávce podle svého nejlepšího úsudku. Pokud se nemůžete rozhodnout, nahrávku přeskočte.
+see-more = <chevron></chevron> Zobrazit více
+see-less = <chevron></chevron> Zobrazit méně

@@ -78,6 +78,8 @@ hy-AM = Armeensk
 hyw = West-Armeensk
 ia = Ynterlingua
 id = Yndonezysk
+ie = Ynterlingua
+ig = Igbo
 is = Iislânsk
 it = Italiaansk
 izh = Izjorysk
@@ -86,6 +88,7 @@ ka = Georgysk
 kaa = Karakalpaksk
 kab = Kabylysk
 kbd = Kabardysk
+ki = Kikuyu
 kk = Kazaksk
 kmr = Kurmanci
 ko = Koreaansk
@@ -110,10 +113,13 @@ ms = Maleizysk
 mt = Malteesk
 my = Burmeesk
 myv = Erzja
+nan-tw = Taiwaneesk (Minnan)
 nb-NO = Noarsk Bokmål
 ne-NP = Nepaleesk
+nia = Nias
 nl = Nederlânsk
 nn-NO = Norwegysk Nynorsk
+nyn = Nyankole
 oc = Okkitaansk
 or = Odia
 pa-IN = Punjabi
@@ -127,6 +133,7 @@ ro = Roemeensk
 ru = Russysk
 rw = Kinyarwanda
 sah = Sakha
+sat = Santali (Ol Chiki)
 sc = Sardyn
 scn = Sisiliaansk
 shi = Tashelhiyt (Shilha)
@@ -146,6 +153,8 @@ th = Taisk
 tl = Tagalog
 tr = Turksk
 tt = Tatarsk
+tw = Twi
+ty = Tahitiaansk
 uby = Oebyksk
 udm = Oedmoertsk
 ug = Oeigoersk
@@ -155,6 +164,8 @@ uz = Oezbeeksk
 vec = Fenetiaansk
 vi = Fjetnameesk
 vot = Wotysk
+yi = Jiddysk
+yo = Yoruba
 yue = Kantoneesk
 zh-CN = Sineesk (Sina)
 zh-HK = Sineesk (Hong Kong)
@@ -187,6 +198,7 @@ logout = Ofmelde
 ## Home Page
 
 home-title = It projekt Common Voice is it inisjatyf fan Mozilla om masinen te learen hoe't echte minsken sprekke.
+default-tagline = Mozilla Common Voice is in inisjatyf om masinen te helpen learen hoe't echte minsken sprekke.
 home-cta = Lit jo heare, doch hjir mei!
 wall-of-text-start =
     Spraak is natuerlik, spraak is minsklik. Dat is wêrom wy fassinearre binne mei it meitsjen fan brûkbere
@@ -290,6 +302,8 @@ shortcut-record-toggle = O
 shortcut-record-toggle-label = Opnimme/Stopje
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Fragmint opnij opnimme
+shortcut-discard-ongoing-recording = Esc
+shortcut-discard-ongoing-recording-label = Rinnende opname fuortsmite
 shortcut-submit = Tebek
 shortcut-submit-label = Fragminten yntsjinje
 request-language-text = Sjogge jo jo taal noch net op Common Voice?
@@ -302,8 +316,8 @@ status-title = Projektsteat: sjoch hoe fier wy't al binne!
 status-contribute = Draach by mei jo stim
 status-hours =
     { $hours ->
-        [one] Op dit stuit ien oer falidearre!
-       *[other] Op dit stuit { $hours } oer falidearre!
+        [one] Op dit stuit ien oere falidearre!
+       *[other] Op dit stuit { $hours } oeren falidearre!
     }
 # Variables:
 # $goal - number of hours representing the next goal
@@ -390,6 +404,10 @@ faq-what-cv-a =
     Spraakwerkenningstechnology is in revolúsje yn de manier wêrop wy omgean mei masinen, mar de op dit stuit beskikbere systemen binne djoer en ôfskerme. Common Voice is ûnderdiel fan Mozilla’s inisjatyf om spraakwerkenningstechnologyen better en foar elkenien tagonkliker te meitsjen. Common Voice is in enoarme wrâldwide database fan donearre stimmen, wêrmei't elkenien fluch en ienfâldich spraakstjoerde apps yn potinsjeel elke taal traine kin.
     
     Wy sammelje net allinnich spraakfragminten yn faak sprutsen talen, mar ek yn dy mei in lytser tal sprekkers. Troch in diverske gegevensset mei stimmen te publisearjen, krije ûntwikkelers, ûndernimmers en mienskippen de mooglikheid om dizze kleau sels oan te pakken. Neist de Common Voice-gegevensset bouwe wy ek in iepenboarne-spraakwerkenningsprogramma mei de namme Deep Speech.
+faq-what-cv-a-2 =
+    Spraakherkenningstechnology is in revolúsje yn de manier wêrop wy omgean mei masinen, mar de op dit stuit beskikbere systemen binne djoer en ôfskerme. Mozilla Common Voice is in inisjatyf om spraakherkenningstechnologyen better en foar elkenien tagonkliker te meitsjen. Common Voice is in enoarme wrâldwide database fan donearre stimmen, wêrmei elkenien fluch en ienfâldich spraakstjoerde apps yn potinsjeel elke taal traine kin.
+    
+    Wy sammelje net allinnich spraakfragminten yn de meast sprutsen talen, mar ek yn dy mei in lytser oantal sprekkers. Troch in ferskate gegevensset mei stimmen te publisearjen, krije ûntwikkelers, ûndernimmers en mienskippen de mooglikheid om dizze kleau sels oan te pakken.
 faq-why-important-q = Wêrom is it wichtich?
 faq-why-important-a =
     Spraak is faaks de meast natuerlike manier om mei inoar te kommunisearjen en spraaktechnologyen bringe dat gemak nei ús kompjûters en mobile apparaten. Wy wolle ûntwikkelers de mooglikheid jaan geweldige spraakwerkenningstapassingen te bouwen, lykas realtime-oersetters en spraakstjoerde digitale assistinten. Mar op dit stuit binne de measte spraakgegevens dy't nedich binne om dit soarte fan tapassingen te bouwen djoer en ôfskerme. Wy hope dat de Common Voice-gegevensset ûntwikkelers biedt wat se nedich hawwe om te ynnovearjen en spraaktechnology beskikber te stellen yn harren eigen taal.
@@ -415,7 +433,7 @@ faq-why-my-lang-q = Wêrom sit myn taal der noch net by?
 faq-why-my-lang-new-a = Mozilla ferkiest net ien taal boppe de oare. Yn stee dêrfan is Common Voice in inisjatyf dat útslutend troch de mienskip oanstjoerd wurdt, mar it ferget <multilangLink>diverske stappen om in nije taal ta te foegjen</multilangLink> en mei it sammeljen fan spraakdonaasjes te begjinnen. Alderearst moat de Common Voice-website oerset wurde, sadat mienskipsleden tagong hawwe ta de ûnderfining fan de meiwurker yn harren eigen taal. Dêrnei hawwe wy in grutte samling auteursrjochtfrije sinnen nedich dy't minsken foarlêze kinne. Sa gau as oan beide easken foldien is, wurdt in taal ‘útbrocht’ op Common Voice, sadat minsken harren stim opnimme kinne en donaasjes fan oaren falidearje kinne. As jo in nije taal beskikber helpe meitsje wolle, gean dan nei 'us <sentenceCollectorLink>helpmiddel foar sinnensamling</sentenceCollectorLink> om te begjinnen.
 faq-what-quality-q = Hokker lûdskwaliteitsnivo is nedich foar in spraakfragmint om yn de gegevensset brûkt wurde te kinnen?
 faq-what-quality-a = Wy wolle dat de Common Voice-gegevensset de audiokwaliteit wjerspegelet dy't yn spraak-nei-tekst-engine yn it wyld hearre sil, dus wy binne op syk nei ôfwikseling. Neist in fariearre sprekkersmienskip leart in gegevensset mei ferskate audiokwaliteiten de spraak-nei-tekst-engine om ferskate libbensechte situaasjes oan te kinnen, fan achtergrûnlûd oant autolawaai. Sa lang jo spraakopname begryplik is, moat dizze goed genôch wêze foar de gegevensset.
-faq-why-10k-hours-q = Wêrom is de doelstelling foar lûdsopnamen 10.000 oer per taal?
+faq-why-10k-hours-q = Wêrom is de doelstelling foar lûdsopnamen 10.000 oeren per taal?
 faq-why-10k-hours-a = Dit is ûngefear it oantal nedige oeren om in operasjoneel spraak-nei-tekst-systeem te trainen.
 faq-how-calc-hours-q = Hoe berekkenet Common Voice de oeren?
 faq-how-calc-hours-a = Wy berekkenje de oeren troch de gemiddelde lingte fan elke opname te skatten en ferfolgens dat oantal te fermannichfâldigjen mei it totale oantal opnamen yn alle talen.
@@ -447,6 +465,9 @@ about-title = Wêrom Common Voice?
 about-subtitle = Common Voice is part fan in inisjatyf fan Mozilla om masinen te helpen learen hoe't echte minsken sprekke. Yn oanfolling op de Common Voice-gegevensset bouwe wy ek in iepen boarne spraakwerkenningsmasine mei de namme Deep Speech.
 about-header-description =
     Beide projekten meitsje diel út fan ús ynspanningen om de digitale spraakkleau te oerbrêgjen. Spraakwerkenningstechnologyen jouwe us apparaten in minsklike diminsje, mar ûntwikkelers hawwe in enoarme hoemannichte spraakgegevens nedich om se te bouwen. Op dit stuit binne de measte fan dy gegevens djoer en ôfskerme.
+    Wy wolle spraakgegevens fergees en frij beskikber meitsje en derfoar soargje dat de gegevens in ferskaat fan echte minsken fertsjinwurdigje. Tegearre kinne wy stimwerkenning foar elkenien better meitsje.
+about-header-description-2 =
+    Dit projekt is in ynspanning om de digitale spraakkleau te oerbrêgjen. Spraakwerkenningstechnologyen jouwe ús apparaten in minsklike diminsje, mar ûntwikkelers hawwe in enoarme hoemannichte spraakgegevens nedich om se te bouwen. Op dit stuit binne de measte fan dy gegevens djoer en ôfskerme.
     Wy wolle spraakgegevens fergees en frij beskikber meitsje en derfoar soargje dat de gegevens in ferskaat fan echte minsken fertsjinwurdigje. Tegearre kinne wy stimwerkenning foar elkenien better meitsje.
 how-does-it-work-title = Hoe't it wurket
 how-does-it-work-text = Wy crowdsource in iepen boarne stimgegevensset. Donearje jo stim, falidearje de sekuerens fan opnamen fan oaren en meitsje de gegevensset better foar elkenien.
@@ -496,8 +517,8 @@ localization = Lokalisaasje
 localization-explanation = Dit is ús proses foar oersetten en oanpassen fan ús ynhâld foar in protte locales (talen).
 sentence-collection = Sinnensamling
 sentence-collection-explanation = It sammeljen fan sinnen út it publike domein, of it skriuwen fan nije foar it publike domein.
-hours-recorded-explanation = It oantal oer oan stimopnamen dat wy oant no ta sammele hawwe.
-hours-validated-explanation = It oantal spraakopname-oeren dat troch 2 fan de 3 brûkers mei in ‘Ja’-stim falidearre is. Dizze markearje de foarútgong yn de rjochting fan de totale projektdoelstelling fan 10.000 oer.
+hours-recorded-explanation = It oantal oeren oan stimopnamen dat wy oant no ta sammele hawwe.
+hours-validated-explanation = It oantal spraakopname-oeren dat troch 2 fan de 3 brûkers mei in ‘Ja’-stim falidearre is. Dizze markearje de foarútgong yn de rjochting fan de totale projektdoelstelling fan 10.000 oeren.
 sst = Spraak-nei-tekst (STT)
 sst-explanation = Spraak-nei-tekst (STT)-technologyen sette stimgegevens om nei tekst.
 de-identified = Anonym makke
@@ -581,9 +602,12 @@ subscribe = Abonnearje
 get-started-speech = Oan 'e gong mei spraakwerkenning
 other-datasets = Oare stimgegevensets
 feedback-q = Kommentaar?
-deepspeech-info = De Common Voice-gegevensset is in oanfolling op Deep Speech, de iepenboarne-spraakwerkenningsmasine fan Mozilla, dy't jo brûke kinne om spraakwerkenningstapassingen te bouwen. Lês ús <githubLink>GitHub-oersicht</githubLink> of besykje it <discourseLink>DeepSpeech-forum op Discourse</discourseLink> om te ûntdekken hoe't jo begjinne kinne.
-common-voice-info-new = Hawwe jo fragen oer Common Voice? Ideeën foar ferbetteringen of kommentaar oer in spesifike taal? Praat mei op ús <discourseLink>Discourse-foarum</discourseLink> en lit it ús witte.
-data-other-librispeech-description = LibriSpeech is in korpus fan ûngefear 1.000 oer lêzen Ingelske spraak yn 16Khz ôfkomstich fan lêzen audioboeken fan it LibriVox-projekt.
+resource-nemo-info = <githubLink>NVIDIA NeMo</githubLink>™ is in <docsLink>opensource-toolkit</docsLink> foar ûndersikers dy't state-of-the-art-AI-modellen foar konversaasjes ûntwikkelje.
+resource-deepspeech-info = Deep Speech, de iepenboarne-spraakwerkenningsmasine fan Mozilla, kin brûkt wurde om spraakwerkenningstapassingen te bouwen. Lês ús <githubLink>GitHub-oersicht</githubLink> of besykje it <discourseLink>DeepSpeech-foarum op Discourse</discourseLink> om te ûntdekken hoe't jo begjinne kinne.
+resource-coqui-info = <coquiLink>Coqui</coquiLink> is tawijd oan iepen spraaktechnology. Harren projekten omfetsje op deep learning basearre STT- en TTS-masinen.
+community-playbook = Mienskipsdraaiboek
+resource-playbook-info = <playbookLink>Untdek nuttige hantliedingen</playbookLink> oer it hiele Common Voice-trajekt, fan lokalisaasje ta gebrûk fan de dataset, krekt as hoe't jo kontakt meitsje kinne mei ús mienskip.
+data-other-librispeech-description = LibriSpeech is in korpus fan ûngefear 1.000 oeren lêzen Ingelske spraak yn 16Khz ôfkomstich fan lêzen audioboeken fan it LibriVox-projekt.
 data-other-ted-name = TED-LIUM-korpus
 data-other-ted-description = De TED-LIUM-korpus is makke fan audiopetearen en harren ûndertitels beskikber op de TED-website.
 data-other-voxforge-description = VoxForge is opset om ûndertitele spraak te sammeljen foar gebrûk mei Free en Open Source Speech Recognition Engines.
@@ -788,20 +812,20 @@ lose-changes-warning = Troch no ôf te sluten ferlieze jo jo wizigingen
 build-custom-goal = In oanpast doel bouwe
 help-reach-hours-pluralized =
     Help mei{ NUMBER($hours) ->
-        [one] { $hours } oer
-       *[other] { $hours } oer
+        [one] { $hours } oere
+       *[other] { $hours } oeren
     }yn it { $language } te berikken mei in persoanlike doelstelling
 help-reach-hours-general-pluralized =
     Help Common Voice{ NUMBER($hours) ->
-        [one] { $hours } oer
-       *[other] { $hours } oer
+        [one] { $hours } oere
+       *[other] { $hours } oeren
     }yn in taal te berikken mei in persoanlike doelstelling
 set-a-goal = In doel stelle
 cant-decide = Kinne jo gjin beslút nimme?
 activity-needed-calculation-plural =
     { NUMBER($totalHours) ->
-        [one] { $totalHours } oer
-       *[other] { $totalHours } oer
+        [one] { $totalHours } oere
+       *[other] { $totalHours } oeren
     }is berikber yn wat mear as{ NUMBER($periodMonths) ->
         [one] { $periodMonths } moanne
        *[other] { $periodMonths } moannen
@@ -857,6 +881,37 @@ why-delete-recordings =
     Kinne jo ús witte litte wêrom jo jo opnamen fuortsmite litte wolle?
 profile-form-delete = Profyl fuortsmite
 
+## Profile Download
+
+download-q = Wolle jo jo gegevens downloade?
+download-info = Fertel ús wat jo downloade wolle:
+download-profile-title = Profyl
+download-profile-info = Befettet e-mailadres, brûkersnamme en demografyske gegevens
+download-profile-size = In pear bytes
+download-recordings-title = Opnamen
+download-recordings-info = Befettet mp3’s en relatearre sinnen
+download-recordings-size = Meastentiids megabytes
+download-recordings-unavailable = Jo kinne jo opnamen net opfreegje wylst der al in oar fersyk yn behanneling is.
+download-recently-requested = Jo kinne elke { $days } dagen in nije samling fan jo opnamen oanfreegje.
+download-size = Grutte
+download-selected = Selektearre
+download-start = Download starte
+download-request = Download oanfreegje
+download-requests = Eardere downloadfersiken
+download-requests-info = Wannear't jo jo opnamen opfreegje, kompilearje wy dizze yn ien of mear ZIP-bestannen. Dit binne jo eardere fersiken:
+download-request-button = Downloade
+download-request-title = { $created }
+download-request-description = { $clipCount } spraakfragminten, totale argyfgrutte { $size }. Ferrint { $expires }.
+download-request-archive-single = Inkeld ZIP-bestân mei
+download-request-archive-multiple = Splitst oer { $archiveCount } ZIP-bestannen mei
+download-request-assembling-description = Jo bestannen wurde gearstald. Kom letter werom.
+download-request-refresh-button = Fernije
+download-request-modal-title = Downloadkeppelingen
+download-request-modal-description = Hjir binne de keppelingen om jo ZIP-bestannen te downloaden.
+download-request-link-text = ZIP-bestân { $offset } fan { $total }
+download-request-metadata-link = Sintekst
+download-request-link-single = Jo kinne ek de streekrjochte URL’s kopiearje en yn jo favorite downloadbehearder plakken. Se ferrinne oer 12 oer, mar jo kinne op elk momint weromkeare nei dizze side om nije oan te meitsjen.
+
 ## Landing
 
 welcome-staff = Wolkom meiwurkers fan { $company }!
@@ -900,3 +955,59 @@ demo-listen-subtitle = Klear om by te dragen?
 
 demo-dashboard-card-header = Persoanlike dashboarden hâlde jo op de hichte fan jo yndividuele foarútgong en fan dy fan de mienskip.
 demo-dashboard-card-body = Foar elk donearre spraakfragmint en elk falidearre audiofragmint wurde jo accountdashboarden bywurke om jo lêste foarderingen wer te jaan yn elke taal wêroan jo bydrage. Ja, jo kinne oan mear as ien bydrage!<br/><br/>Brûk dashboarden om jo statistiken by te hâlden, te besjen hoe't jo it dogge neist oaren yn de mienskip en deistige of wyklikse bydragedoelen fêst te stellen.
+
+## Validation criteria
+
+contribution-criteria-nav = Kritearia
+contribution-criteria-link = Bydragekritearia begripe
+contribution-criteria-page-title = Bydragekritearia
+contribution-criteria-page-description = Ynformearje jo oer wêrop't jo by it harkjen fan fragminten lette moatte en hoe't jo jo eigen stimopnamen ferbetterje kinne!
+contribution-for-example = bygelyks
+contribution-misreadings-title = Lêsflaters
+contribution-misreadings-description = Kontrolearje wylst jo harkje soarchfuldich dat wat opnommen is ek krekt is wat der skreaun stiet; keur it ôf as der sels lytse flaters binne. <br />Faaks foarkommende flaters binne:
+contribution-misreadings-description-extended-list-1 = <strong>‘In’</strong> of <strong>‘De’</strong> ûntbrekt oan it begjin fan de opname.
+contribution-misreadings-description-extended-list-2 = Der ûntbrekt <strong>‘s’</strong> of <strong>‘en’</strong> oan it ein fan in wurd.
+contribution-misreadings-description-extended-list-3 = Gearfoegingen dy't der eins net binne, lykas ‘Sa’n’ yn stee fan ‘Sa ien’, of oarsom.
+contribution-misreadings-description-extended-list-4 = It ein fan it lêste wurd ûntbrekt troch it te fluch ôfbrekken fan de opname.
+contribution-misreadings-description-extended-list-5 = Meardere besykjen om in wurd te lêzen.
+contribution-misreadings-example-1-title = De enoarme dinosaurussen fan it Trias.
+contribution-misreadings-example-2-title = De enoarme dinosaurus fan it Trias.
+contribution-misreadings-example-2-explanation = [Moat ‘dinosaurussen’ wêze]
+contribution-misreadings-example-3-title = De enoarme dinosaurussen fan it Tria-.
+contribution-misreadings-example-3-explanation = [Opname ôfbrutsen foar it ein fan it lêste wurd]
+contribution-misreadings-example-4-title = De enoarme dinosaurussen fan it Trias. Ja.
+contribution-misreadings-example-4-explanation = [Der is mear as de nedige tekst opnommen]
+contribution-misreadings-example-5-title = Ik haw kofje mei har dronken.
+contribution-misreadings-example-6-title = Ik haw kofje mei 'r dronken.
+contribution-misreadings-example-6-explanation = [Soe ‘har’ wêze moatte]
+contribution-misreadings-example-7-title = Ik haw in kofje mei har dronken.
+contribution-misreadings-example-7-explanation = [Der sit gjin ‘in’ yn de oarspronklike tekst]
+contribution-misreadings-example-8-title = De hommel fleach foarby.
+contribution-misreadings-example-8-explanation = [Net-oerienkommende ynhâld]
+contribution-varying-pronunciations-title = Utienrinnende útspraken
+contribution-varying-pronunciations-description = Wês foarsichtich eardat jo in fragmint ôfwize as in lêzer in wurd ferkeard útsprutsen hat, de klam op it ferkearde plak lein hat, of blykber in fraachteken negearre hat. Der is wrâldwiid in grut ferskaat oan útspraken yn gebrûk, guon fan dy hawwe jo miskien net heard yn jo lokale mienskip. Jou asjebleaft in marzje fan wurdearring foar dyjingen dy't oars kinne sprekke as jo.
+contribution-varying-pronunciations-description-extended = Mar as jo tinke dat de lêzer it wurd noch nea brûkt hat en ienfâldichwei in ferkeare ynskatting fan de útspraak docht, wiis it fragmint dan ôf. As jo net wis binne, brûk dan de knop Oerslaan.
+contribution-varying-pronunciations-example-1-title = Hy bestelde in poarsje satee.
+contribution-varying-pronunciations-example-1-explanation = [‘Satee’ is OK mei sawol de klemtoan op de earste as de twadde lettergreep]
+contribution-varying-pronunciations-example-2-title = Hy luts him we-rom.
+contribution-varying-pronunciations-example-2-explanation = [‘Werom’ wurdt faaks as ien lettergreep útsprutsen, net as twa]
+contribution-background-noise-title = Eftergrûnlûd
+contribution-background-noise-description = Wy wolle dat de masinelearende algoritmen in breed skala oan eftergrûnlûden ferwurkje kinne, en sels relatyf lûde lûden kinne akseptearre wurde, ûnder betingst dat se net berhinderje dat jo de hiele tekst hearre. Rêstige eftergrûnmuzyk is OK; muzyk dy't lûd genôch is om derfoar te soargjen dat jo net elk wurd ferstean kinne net.
+contribution-background-noise-description-extended = As de opname fersteurd wurdt of kreaket, wiis dizze dan ôf, útsein de hiele tekst noch hieltyd te ferstean is.
+contribution-background-noise-example-1-fixed-title = <strong>[Prúste]</strong> De enoarme dinosaurussen fan it <strong>[hoastje]</strong> Trias.
+contribution-background-noise-example-2-fixed-title = De enoarme dino <strong>[hoastje]</strong> it Trias.
+contribution-background-noise-example-2-explanation = [De tekst is foar in part net te hearren]
+contribution-background-noise-example-3-fixed-title = <strong>[Kreaklûden]</strong> enoarme dinosaurussen fan <strong>[kreakje]</strong> -ias.
+contribution-background-voices-title = Eftergrûnlûden
+contribution-background-voices-description = In rêstich rûzen op de eftergrûn is oké, mar wy wolle gjin ekstra stimmen dy't derfoar soargje kinne dat in masine-algoritme wurden identifisearret dy't net yn de skreaune tekst stean. As jo oare wurden dan dy fan de tekst hearre kinne, moat it fragmint ôfwiisd wurde. Meastentiids bart dit as de tv oanstiet of as der in petear yn de buert fierd wurdt.
+contribution-background-voices-description-extended = As de opname weifalt of kreaket, wiis it fragmint dan ôf, útsein de hiele tekst noch hieltyd te ferstean is.
+contribution-background-voices-example-1-title = De enoarme dinosaurussen fan it Trias. <strong>[lêzen troch ien stim]</strong>
+contribution-background-voices-example-1-explanation = Komsto? <strong>[roppen troch in oar]</strong>
+contribution-volume-title = Folume
+contribution-volume-description = Der sille natuerlike fariaasjes yn folume tusken lêzers wêze. Wiis it fragmint allinnich ôf as it folume sa heech is dat de opname ûnderbrutsen wurdt, of (faker) as it sa leech is dat ûnfersteanber is wat der sein wurdt sûnder nei de skreaune tekst sjen te moatten.
+contribution-reader-effects-title = Lêzereffekten
+contribution-reader-effects-description = De measte opnamen binne fan minsken dy't mei harren natuerlike stim prate. Jo kinne sa no en dan in ôfwikende opname akseptearje dy't skreauwend of flústere wurdt of dúdlik ôflevere wurdt mei in ‘dramatyske’ stim. Wiis songen opnamen en opnamen mei in kompjûtergenerearre stim ôf.
+contribution-just-unsure-title = Gewoan ûnwis?
+contribution-just-unsure-description = As jo wat tsjinkomme dat net yn dizze rjochtlinen behannele wurdt, stim dan nei jo bêste oardiel. As jo echt net beslisse kinne, brûk dan de knop Oerslaan en gean troch nei de folgjende opname.
+see-more = <chevron></chevron>Mear toane
+see-less = <chevron></chevron>Minder toane
